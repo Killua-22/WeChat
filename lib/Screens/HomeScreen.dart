@@ -1,6 +1,6 @@
 import 'package:chat_app/Authenticate/Methods.dart';
 import 'package:chat_app/Screens/ChatRoom.dart';
-import 'package:chat_app/group_chats/group_chat_screen.dart';
+// import 'package:chat_app/group_chats/group_chat_screen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
