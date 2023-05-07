@@ -1,16 +1,24 @@
-# chat_app
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# WeChat
+  
+  ## Description 
+  A simple one to one chat app made with flutter for front end and firebase ffirestore for backend. 
+  ## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
+  
+  ## Installation 
+  clone the repository, then run flutter pub get to install all the packages. Run the app. 
+  ## Usage 
+  Sign up to make an account then basically you can chat with all the users of the app. 
+  ## License 
+  This project is license under UCB
+  ## Contributing 
+  Killua-22
+  ## Tests
+  flutter doctor
+  ## Questions
+  If you have any questions about this projects, please contact me directly at ankitnavaghare12345@gmail.com. You can view more of my projects at https://github.com/Killua-22.
