@@ -153,7 +153,9 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                                   DocumentSnapshot doc =
                                       snapshot.data!.docs[index];
 
-                                  if (name.isEmpty) {
+                                  if (name.isEmpty &&
+                                      doc['name'] !=
+                                          _auth.currentUser!.displayName!) {
                                     return ListTile(
                                       contentPadding: EdgeInsets.only(left: 40),
                                       leading: CircleAvatar(
@@ -191,9 +193,11 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                                     );
                                   }
                                   if (doc['name']
-                                      .toString()
-                                      .toLowerCase()
-                                      .startsWith(name.toLowerCase())) {
+                                          .toString()
+                                          .toLowerCase()
+                                          .startsWith(name.toLowerCase()) &&
+                                      doc['name'] !=
+                                          _auth.currentUser!.displayName!) {
                                     return ListTile(
                                       leading: CircleAvatar(
                                           backgroundColor: Colors.black),
