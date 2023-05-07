@@ -91,21 +91,24 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                       padding: EdgeInsets.only(left: 20),
                       child: Container(
                         height: size.height / 14,
-                        width: size.width / 1.5,
+                        width: size.width / 1.4,
                         alignment: Alignment.topCenter,
                         child: Container(
                           height: size.height / 14,
                           width: size.width / 1.15,
                           child: TextField(
+                            style: TextStyle(color: Colors.white),
                             onChanged: (val) {
                               setState(() {
                                 name = val;
                               });
                             },
                             decoration: InputDecoration(
+                              contentPadding: EdgeInsets.only(top: 2, left: 20),
                               filled: true,
                               fillColor: Color(0xFF373E4E),
                               hintText: "Search",
+                              hintStyle: TextStyle(color: Colors.grey),
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(200),
                               ),
@@ -124,46 +127,16 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                       style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20))),
-                      child: Text("Search"),
+                      child: Icon(Icons.search),
                     ),
                   ]),
                   SizedBox(
                     height: size.height / 30,
                     // height: 200,
                   ),
-
-                  // userMap != null
-                  //     ? ListTile(
-                  //         onTap: () {
-                  //           String roomId = chatRoomId(
-                  //               _auth.currentUser!.displayName!,
-                  //               userMap!['name']);
-
-                  //           Navigator.of(context).push(
-                  //             MaterialPageRoute(
-                  //               builder: (_) => ChatRoom(
-                  //                 chatRoomId: roomId,
-                  //                 userMap: userMap!,
-                  //               ),
-                  //             ),
-                  //           );
-                  //         },
-                  //         leading: Icon(Icons.account_box, color: Colors.black),
-                  //         title: Text(
-                  //           userMap!['name'],
-                  //           style: TextStyle(
-                  //             color: Colors.black,
-                  //             fontSize: 17,
-                  //             fontWeight: FontWeight.w500,
-                  //           ),
-                  //         ),
-                  //         subtitle: Text(userMap!['email']),
-                  //         trailing: Icon(Icons.chat, color: Colors.black),
-                  //       )
-                  //     : Container(),
                   Expanded(
                     child: Container(
-                      padding: EdgeInsets.only(left: 26, top: 47),
+                      padding: EdgeInsets.only(left: 0, top: 40),
                       decoration: BoxDecoration(
                           color: Color(0xFF292F3F),
                           borderRadius: BorderRadius.only(
@@ -182,6 +155,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
 
                                   if (name.isEmpty) {
                                     return ListTile(
+                                      contentPadding: EdgeInsets.only(left: 40),
                                       leading: CircleAvatar(
                                           backgroundColor: Colors.black),
                                       title: Text(

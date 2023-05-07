@@ -61,13 +61,14 @@ class _CreateAccountState extends State<CreateAccount> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "SIGN UP",
+                            "Sign Up",
                             style: TextStyle(
                               fontSize: 32,
                               color: Colors.white,
                               fontWeight: FontWeight.w600,
                             ),
                           ),
+                          SizedBox(height: size.height / 20),
                           Padding(
                             padding: const EdgeInsets.symmetric(vertical: 18.0),
                             child: Container(
@@ -155,7 +156,7 @@ class _CreateAccountState extends State<CreateAccount> {
           width: size.width / 1.2,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(206),
-            color: Colors.blue,
+            color: Color(0xFF225EE4),
           ),
           alignment: Alignment.center,
           child: Text(
@@ -175,6 +176,7 @@ class _CreateAccountState extends State<CreateAccount> {
       height: size.height / 14,
       width: size.width / 1.1,
       child: TextField(
+        style: TextStyle(color: Colors.white),
         controller: cont,
         decoration: InputDecoration(
           filled: true,

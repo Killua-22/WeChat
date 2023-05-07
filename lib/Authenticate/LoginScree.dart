@@ -170,6 +170,7 @@ class _LoginScreenState extends State<LoginScreen> {
       height: size.height / 14,
       width: size.width / 1.1,
       child: TextField(
+        style: TextStyle(color: Colors.white),
         controller: cont,
         decoration: InputDecoration(
           filled: true,
